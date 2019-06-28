@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-image:url('./Groupsonic_detail.png');
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        .navdiv{
+            background-color: #02457a;
+            display: flex;
+            padding: 20px;
+            width: 96vw;
+        }
+        .p1{
+            color: white;
+            font-weight: bold;
+            font-size: 32px;
+            font-family: Verdana;
+        }
+        .p2{
+            color: #08b4f8;
+            font-weight: bold;
+            font-size: 32px;
+            font-family: Verdana, sans-serif;
+        }
+        nav a {
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            margin-right: 20px;
+            font-family: Verdana, sans-serif;
+        }
+        nav {
+            padding-top: 45px;
+            margin-left: 200px;
+        }
+        .btn-div {
+            margin-left: 230px;
+            padding-top: 37px;
+        }
+        .nav-btn1{
+            margin-right: 20px;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            border-radius: 5px;
+            border-color: white;
+            font-weight: medium;
+            height: 30px;
+            width: 100px;
+        }
+        .nav-btn2{
+            background-color: #02457a;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            border-color: white;
+            border-width: 1px;
+            height: 30px;
+            width: 100px;
+        }
+
+        .sheet {
+            width: 50%;
+            background-repeat: no-repeat;
+
+        }
+
+        .container{
+            display: flex;
+            width: 90%;
+            margin-left: 5%;
+        }
+        .form{
+            width: 45%;
+            height: 60%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            margin-left: 25%;
+            margin-top: 12%;
+        }
+
+        input{
+            height: 24px;
+            width: 250px;
+            font-size: 14px;
+            border-radius: 3px;
+            padding: 5px;
+            padding-left: 15px;
+            border-color: whitesmoke;
+            background-color: inherit;
+            border: 1px solid rgb(197, 195, 195);
+            margin-bottom: 10px;
+            outline: none;
+        }
+        
+        .formbtn{
+            background: #171F2C;
+            font-size: 18px;
+            color: white;
+        }
+        .divider-line {
+            height: 1px;
+            width: 100%;
+            background-color: grey;
+        }
+        a{
+            color: rgb(10, 10, 179);
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
+</head>
+<body>
+        <div class="form">
+            <div style="display: flex; margin-bottom: 20px;">
+                    <button onclick="change();" style="background: none; border: none; margin-left: 20px;">
+                            <svg width="16" height="16" viewBox="0 0 128 128" background-color="rgb(10, 10, 179)">
+                                <path d="M88 104a8 8 0 0 0-2.34-5.66L51.31 64l34.35-34.34a8 8 0 0 0-11.32-11.32l-40 40a8 8 0 0 0 0 11.31l40 40A8 8 0 0 0 88 104z" data-name="8x"></path>
+                            </svg>
+                        </button>
+                    
+                        <p style="margin-left: 130px;">Sign In with <a href="">Facebook</a> or <a href="">Google</a></p>
+            </div>
+                
+            <div style="display: flex; flex-direction: column; align-self: center;">
+               
+                    <input type="email" placeholder="Email Address">
+        
+                    <input type="password" placeholder="Password">
+                    <a style="margin-top:10px;" href="">Forgot password?</a>
+            </div> 
+            
+            <button onclick="openuser();" style="align-self:center; text-align: center; width: 270px; height: 40px; margin-top: 20px; background-color: rgb(219, 83, 83); color: white; font-size: 18px; margin-bottom: 30px;">Register</button>
+
+            <p>Don't have an account yet? <a href="Register.html">Register</a></p>
+
+        </div>
+    <script>
+        const change = () => {
+            window.location.href = 'home.html';
+        }
+
+        const openuser = () => {
+            window.location.href = 'home.html';
+        }
+    </script>
+</body>
+</html>

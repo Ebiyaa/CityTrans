@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+
+    <title>Routes and Schedules</title>
+
+    <style>
+         body {
+            background-color:whitesmoke;
+            margin-bottom: 200px;
+        }
+        .navdiv{
+            background-color: #02457a;
+            display: flex;
+            padding: 20px;
+            width: 96vw;
+            height: 50px;
+            align-items: center;
+        }
+        .p1{
+            color: white;
+            font-weight: bold;
+            font-size: 32px;
+            font-family: Verdana;
+        }
+        .p2{
+            color: #08b4f8;
+            font-weight: bold;
+            font-size: 32px;
+            font-family: Verdana, sans-serif;
+        }
+        .p3{
+            color: #091b22;
+            font-weight:bold;
+            font-size: 25px;
+            position: inherit;
+            margin-left: 70px;
+            margin-bottom: 0px;
+            font-family: Verdana, sans-serif;
+        }
+        .p4{
+            color:#091b22 ;
+            font-weight:bold;
+            font-size: 25px;
+            position: inherit;
+            margin-left: 70px;
+            margin-bottom: 0%;
+            font-family: Verdana, sans-serif;
+        }
+        nav a {
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            margin-right: 20px;
+            font-family: Verdana, sans-serif;
+        }
+        nav {
+            padding-top: 10px;
+            margin-left: 200px;
+        }
+        .btn-div {
+            margin-left: 230px;
+            padding-top: 37px;
+        }
+        .nav-btn1{
+            margin-right: 20px;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            border-radius: 5px;
+            border-color: white;
+            font-weight: medium;
+            height: 30px;
+            width: 100px;
+        }
+        .nav-btn2{
+            background-color: #02457a;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            border-color: white;
+            border-width: 1px;
+            height: 30px;
+            width: 100px;
+        }
+        .dropbtn {
+            background-color: #02457a;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            border: none;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #02457a;
+            min-width: 160px;
+            width:100%; 
+            overflow:auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+           
+        }
+        .dropdown-content a {
+            color:rgb(44, 177, 238) ;
+            padding: 6px 10px;
+            text-decoration: none;
+            display: block;
+            
+        }
+        .dropdown-content a:hover {background-color: #ebdff0 ;width:87%; overflow:auto; }
+        .dropdown:hover .dropdown-content {display: block;}
+        .dropdown:hover .dropbtn {background-color:#92c4d811;   } 
+
+        .Subway {
+            margin-top: 30px;
+            }
+        .Routes h1{
+            position: inherit;
+            font-weight: 50px;
+            color:  #0c2b44;
+            margin-left: 70px;
+            font-weight:bolder;
+            font-size: 40px;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse; 
+            border: 1px solid black;
+            width: 80%;
+            margin-left: 60px;
+            
+            } 
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 10px;
+            border: 1px solid black;
+            border-collapse: collapse;
+                        }
+       
+        tr:nth-child(even) {
+            background-color: #dddddd;
+
+            }
+            
+    </style>
+</head>
+    <body>
+<!-- Navbar -->
+<div class="navdiv">
+        <p class="p1">city</p><p class="p2">Trans</p>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="Booking.html">Booking</a>
+            <a href="">Routes and Schedules</a>
+            
+        </nav>
+    </div>
+                      
+    <div class="Routes">
+        <h1 >Routes and Schedules</h1>
+        <div class="Buses">
+            <table style=width:80%>
+               <p class="p3">BUS SCHEDULES</p>
+                <tr>
+                    <th>Service</th>
+                    <th>Days</th>
+                    <th>Departure Time</th>
+                </tr>
+                <tr>
+                    <td>Circle ↔ Accra New Tema Station </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Circle ↔ WAEC</td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Circle Lido ↔ Abeka Lapaz </td> 
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td>Madina ↔ Circle Overhead </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td>Nima mamobi ↔ Circle Overhead </td>  
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td>Accra CMB ↔ Ablekuma </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+
+                <tr>
+                    <td>Osu (37 Station) ↔ 37 Lorry Park </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+
+                <tr>
+                    <td>Tse Addo ↔ 37 Lorry Park </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+
+                <tr>
+                    <td>Ashaiman Main Station ↔ Abeka Lapaz </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+
+                <tr>
+                    <td>Taifa ↔ Abeka Lapaz </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td>Tema Community One Market ↔ Abeka Lapaz </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td>Accra ↔ Abelemkpe </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td>Kasoa ↔ Abossey-Okai </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Darkuman ↔ Accra </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td>Circle Accra ↔ Abeka Lapaz </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td>Dome Kwabenya ↔ Abeka Lapaz  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td>  Sapeiman ↔ Abeka Lapaz  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Kasoa ↔ Abeka Lapaz  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Circle ↔ Alajo  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Kotobabi Police Station ↔ Alajo Junction  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Apapa ↔ Accra New Tema Station  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Kaneshie ↔ Arena </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td>  Russia ↔ Arena </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Kaneshie ↔ Atico  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr><tr>
+                    <td> Banana Inn ↔ Accra Post Office  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Banana Inn ↔ Accra New Tema Station  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Osu RE ↔ Circle  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Ridge Hospital ↔ Circle </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td>  Stadium ↔ Circle </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Swanlake Last Stop ↔ Circle  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr><tr>
+                    <td> Teachers Hall ↔ Circle </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td>  New Town ↔ Adenta  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Kasoa ↔ Accra New Town  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Madina ↔ Accra New Town </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Nima Maamobi ↔ Accra New Town  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td>  Nima ↔ Accra </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td>Nima ↔ Ashaiman  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Nima ↔ Circle  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td>Trade Fair (La) ↔ Accra New Tema Station </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Banana Inn ↔ Accra New Tema Station </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Zambrama Line ↔ Agbogbloshie 2  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td>Zambrama Line ↔ Arena  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td>Zambrama Line ↔ Kaneshie  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Zambrama Line ↔ Odorna-Circle </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+                <tr>
+                    <td> Zongo Junction ↔ Agege  </td>
+                    <td>Monday-Saturday</td>
+                    <td>6:00am-10:00pm</td>
+                </tr>
+
+                   
+                
+            </table>
+        </div>
+    </div>
+    <div class="Subway">
+        <table style=width:80%>
+                <p class="p4">SUBWAY SCHEDULES</p>
+            <th>DESTINATION</th>
+            <th>ARRIVAL</th>
+            <th>DEPARTURE</th>
+            <th>DAYS</th>
+            <tr>
+                <td> COMMUNITY 1  </td>
+                <td> </td>
+                <td>6:00</td>
+                <td>Monday-Saturday</td>
+            </tr>
+            <tr>
+                <td> TEMA		</td>
+                <td>06:10</td>
+                <td>06:12  </td>
+                <td>Monday-Saturday</td>
+            </tr>
+            <tr>
+                <td> ASOPROCHONA		</td>
+                <td>06:20</td>
+                <td>06:22 </td>
+                <td>Monday-Saturday</td>
+            </tr>
+            <tr>
+                <td>BATCHONA		 </td>
+                <td>06:46</td>
+                <td>06:48 </td>
+                <td>Monday-Saturday</td>
+            </tr>
+            <tr>
+                <td>ACHIMOTA		</td>
+                <td>07:10</td>
+                <td>07:12 </td>
+                <td>Monday-Saturday</td>
+            </tr>
+            <tr>
+                <td>ODAW		</td>
+                <td>07:22</td>
+                <td>07:24 </td>
+                <td>Monday-Saturday</td>
+            </tr>
+            <tr>
+                <td> ACCRA	  </td>
+                <td>07:30</td>
+                <td> </td>
+                <td>Monday-Saturday</td>
+            </tr>
+            <tr>
+                <td> ACCRA		 </td>
+                <td> </td>
+                <td>17:40 </td>
+                <td>Monday-Saturday</td>
+            </tr>
+            <tr>
+                <td>ODAW		 </td>
+                <td>17:50</td>
+                <td>17:52 </td>
+                <td>Monday-Saturday</td>
+            </tr>
+            <tr>
+                <td> ACHIMOTA		 </td>
+                <td>18:02</td>
+                <td>18:06 </td>
+                <td>Monday-Saturday</td>
+            </tr>
+            <tr>
+                <td> BATCHONA		  </td>
+                <td>18:30</td>
+                <td>18:32</td>
+                <td>Monday-Saturday</td>
+            </tr>
+            <tr>
+                <td> ASOPROCHONA		  </td>
+                <td>18:50</td>
+                <td>19:02</td>
+                <td>Monday-Saturday</td>
+            </tr>
+            <tr>
+                <td> TEMA		 </td>
+                <td>19:10</td>
+                <td>19:12</td>
+                <td>Monday-Saturday</td>
+            </tr>
+            <tr>
+                <td> COMMUNITY 1	 </td>
+                <td>19:22 </td>
+                <td></td>
+                <td>Monday-Saturday</td>
+            </tr>
+        </table>
+
+        </div>
+    </div>  
+    </body>
+</html>
+     

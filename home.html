@@ -37,7 +37,7 @@
         }
         nav {
             padding-top: 45px;
-            margin-left: 200px;
+            margin-left: 150px;
         }
         .btn-div {
             margin-left: 230px;
@@ -70,10 +70,9 @@
             width: 90vw;
             margin-top: 5px;
             margin-left: 4vw;
-            height: 60vh;
-            box-shadow: 0px 6px 26px -1px #737273;
+            box-shadow: 0px 8px 26px -1px #4e4e4e;
             align-content: center;
-            height: 90vh;
+            height: 100vh;
         }
 
         .opaque:hover img{
@@ -89,12 +88,17 @@
         margin-top: -330px;
         margin-left: 70px;
         font-weight: bold;
+        transform: scale(0);
+        }
+        .opaque:hover .text{
+            transform: scale(1);
+            transition: 1s ease-out;
         }
 
-        /* On smaller screens, decrease text size */
+        /* On smaller screens, decrease text size
         @media only screen and (max-width: 300px) {
         .text {font-size: 11px}
-        }
+        } */
 
         section {
             width: 90vw;
@@ -116,10 +120,28 @@
         }
         footer a:hover {
             color: white;
-            font-size: 18px;
+            font-size: 22px;
             text-decoration: underline;
             transition: all .2s ease-in-out;
         }
+
+        .servicediv{
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 70px;
+        }
+        .vector{
+            width: 100px;
+            height: 100px;
+            color: white;
+        }
+        .servicediv p {
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+        
     </style>
 </head>
 <body>
@@ -127,73 +149,91 @@
     <div class="navdiv">
         <p class="p1">city</p><p class="p2">Trans</p>
         <nav>
-            <a href="">Booking</a>
-            <a href="">Ticket Purchasing</a>
-            <a href="">Delivery</a>
+            <a href="">Home</a>
+            <a href="Booking.html">Booking</a>
+            <a href="RoutesandSchedules.html">Routes and Schedules</a>
+           
         </nav>
         <div class="btn-div">
-            <button class="nav-btn1">REGISTER</button>
-            <button class="nav-btn2">SIGN IN</button>
+            <button onclick="change();" class="nav-btn1">REGISTER</button>
+            <button onclick="change2();" class="nav-btn2">SIGN IN</button>
         </div>
     </div>
 
     <div class="opaque">
-        <img src="images/back_.jpg" style="width:100%; height: 100%;">
+        <img src="./images/chuttersnap-758540-unsplash.jpg" style="width:100%; height: 100%;">
         <div class="text">No matter your destination <br>We have you covered</div>
     </div>
 
-    <section>
-            <p style="padding: 30px; text-align: center; font-size: 35px; padding-top: 60px;">Experience a variety of services on our platform.</p>
-            <div>
-                <div style="background-image: url('images/bus_trans.jpeg'); height: 400px; width: 400px; margin-left: 100px;"></div>
-                <div style="background-color: white; height: 200px; width: 500px; box-shadow: 0px 3px 10px -1px #737273; padding: 20px; margin-left: 450px; margin-top: -300px;" >
-                    <p style="font-size: 20px; font-weight: bold;">Bus Services</h6>
-                    <p>Make arrangement for buses for family or group trips. <br> Also purchase tickets for individual trips and receive e-receipts in real-time.</p>
-                </div>
-            </div>
-            <hr style="width: 70%; margin-top: 200px; margin-bottom: -50px; align-self: center;">
-            <div style="margin-top: 200px;">
-                <div style="background-image: url('images/air_trans.jpeg'); height: 400px; width: 400px; margin-left: 600px; object-fit: cover;"></div>
-                <div style="background-color: white; height: 200px; width: 500px; box-shadow: 0px 3px 10px -1px #737273; padding: 20px; margin-left: 100px; margin-top: -300px;" >
-                    <p style="font-size: 20px; font-weight: bold;">Airline Ticket Purchasing</p>
-                    <p>This handy tool helps you create dummy text for all your layout needs. <br> We are gradually adding new functionality and we welcome your suggestions and feedback.
-                    <br> Please feel free to send us any additional dummy texts.</p>
-                </div>
-            </div>
-            <hr style="width: 70%; margin-top: 200px; margin-bottom: -50px; align-self: center;">
+    <div style="background-color: white; width: 90vw; margin-left: 4vw; margin-bottom: none; text-align: center;">
+        <p style="text-align: center; font-size: 50px; font-weight: medium; padding-top: 50px;">Welcome</p>
+        <p style="font-size: 20px; padding: 20px; padding-top: none;">CityTrans is a private transport company which manages 
+           inter-city transport system in the Accra.
+            We operate in the areas of bookings, rentals, bus and subway scheduling.</p>
 
-            <div style="margin-top: 200px; padding-bottom: 150px;">
-                <div style="background-image: url('images/rental_trans.jpeg'); height: 400px; width: 400px; margin-left: 100px;"></div>
-                <div style="background-color: white; height: 200px; width: 500px; box-shadow: 0px 3px 10px -1px #737273; padding: 20px; margin-left: 450px; margin-top: -300px;" >
-                    <p style="font-size: 20px; font-weight: bold;">Bus Services</h6>
-                    <p>Make arrangement for buses for family or group trips. <br> Also purchase tickets for individual trips and receive e-receipts in real-time.</p>
+        <div style="display: flex; background-color: white; width: 90vw; justify-content: space-around">
+            <p style="font-size: 20px; padding: 20px;">The strategy is to develop excellent customer creating a timely transport network within the city,
+             hiring the best drivers, ensuring passenger safety and applying 
+             competitive pricing structure serving all client within Accra.
+            </p>
+            <p style="font-size: 20px; padding: 20px;">
+             We specialize promoting Ghanaian tourism by partnering with Tour companies to provide valuable experiences of the Ghanaian culture for our users.
+             We also run mass vehicle rental services to institutions and private bodies.
+            </p>
+        </div>
+        <div>
+            <p style="text-align: center; font-size: 50px; font-weight: bold; padding-top: 20px; padding-bottom: 40px;">Our Services</p>
+            <div class="servicediv">
+
+                <div style="width: 400px">
+                    <img class="vector" src="./images/Group 2booking.jpg" alt="booking">
+                    <p style='font-size:23px; font-weight:medium;'>We provide our clients with the highest level of secure tour and rentals.
+                        
+                    </p>
                 </div>
-            </div>
-    </section>
-    <div class="section1">
-            <p style="text-align: center; font-size: 35px; padding-top: 50px; margin-top: -20px; margin-bottom: 50px;">Explore recommended destinations for your trip this season</p>
-        <div style="display: flex; justify-content: space-around;">
-            <div>
-                <img src="images/back2.jpeg" alt="dest1" width="200px" height="250px">
-                <p style="font-weight: bold; font-size: 20px;">Taiwan</p>
-                <p>Immerse in the night life</p>
-            </div>
-            <div>
-                <img src="images/back3.jpeg" alt="dest2" width="200px" height="250px">
-                <p style="font-weight: bold; font-size: 20px;">Sri Lanka</p>
-                <p>Catch up on fun rides</p>
-            </div>
-            <div>
-                <img src="images/subway_trans.jpeg" alt="dest3" width="200px" height="250px">
-                <p style="font-weight: bold; font-size: 20px;">Malaysia</p>
-                <p>Explore the subways</p>
-            </div>
-            <div>
-                <img src="images/groupTour.jpeg" alt="dest4" width="200px" height="250px">
-                <p style="font-weight: bold; font-size: 20px;">Russia</p>
-                <p>Fun with Russian cuisine</p>
+
+                <div style="width: 400px">
+                    <img class="vector" src="./images/Group 2route.jpg" alt="booking">
+                    <p style='font-size:23px; font-weight:medium;'>Find schedules of inter-city bus and subway with specific times and routes.
+                    </p>
+                </div>
             </div>
         </div>
+
+    </div>
+   
+    <div class="section1">
+            <p style="text-align: center; font-size: 35px; padding-top: 50px; margin-top: -20px; margin-bottom: 50px;">Explore recommended destinations for your trip this season</p>
+            <div style="display: flex; justify-content: space-around;">
+                <div>
+                    <img src="./images/tettehquarshie_night.jpeg" alt="dest1" width="550px" height="250px">
+                    <p style="font-weight: bold; font-size: 20px; margin-top: -70px;color: white; padding-left: 5px;">Tetteh Quarshie Interchange</p>
+                    <p style="color: white; font-weight: bold; padding-left: 5px;">Take the night city tour</p>
+                </div>
+                <div>
+                    <img src="./images/accraDubai.jpeg" alt="dest1" width="550px" height="250px">
+                    <p style="font-weight: bold; font-size: 20px; color: white; margin-top: -70px; padding-left: 5px;">Accra Dubai</p>
+                    <p style="color: white; font-weight: bold; padding-left: 5px;">Explore beautiful scenery</p>
+                </div>
+            </div>
+        <div style="display: flex; justify-content: space-around; margin-bottom: 50px;">
+            <div>
+                <img src="images/aburi.jpeg" alt="dest1" width="350px" height="250px">
+                <p style="font-weight: bold; font-size: 20px;color: white; margin-top: -70px; padding-left: 5px;">Aburi Gardens</p>
+                <p style="color: white; font-weight: bold; padding-left: 5px;">Enjoy the natural reserve</p>
+            </div>
+            <div>
+                <img src="images/nkrumah.jpeg" alt="dest2" width="360px" height="250px">
+                <p style="font-weight: bold; font-size: 20px;color: white; margin-top: -70px; padding-left: 5px;">Kwame Nkrumah Museum</p>
+                <p style="color: white; font-weight: bold; padding-left: 5px;">Catch up on Ghana's history</p>
+            </div>
+            <div>
+                <img src="images/senchi.jpeg" alt="dest3" width="360px" height="250px">
+                <p style="font-weight: bold; font-size: 20px;color: white; margin-top: -70px; padding-left: 5px;">The Royal Senchi</p>
+                <p style="color: white; font-weight: bold; padding-left: 5px;">Relaxation with a view of the Adomi bridge</p>
+            </div>
+        </div>
+        
         <footer style="background-color:rgb(6, 0, 94); display: flex;">
             <div style="display: flex; margin-right: 80px;">
                 <p class="p1">city</p><p class="p2">Trans</p>
@@ -210,22 +250,32 @@
         </div>
         <div style="padding-top: 27px; margin-right: 80px;">
             <p style="font-weight: bolder; color: white;  font-size: 20px;">Our Services</p>
-            <p><a href="">Booking</a></p>
-            <p><a href="">Ticket Purchasing</a></p>
-            <p><a href="">Delivery</a></p>
-            <p><a href="">Car Rental</a></p>
+            <p><a href="./Booking.html">Tour</a></p>
+            <p><a href="./Booking.html">Rental</a></p>
+            <p><a href="./RoutesandSchedules.html">Schedules</a></p>
         </div>
         <div  style="padding-top: 27px; color: white; font-size: 18px;">
             <p>Save time and money. <br>
             Subscribe to get the best of deals!</p>
             <div>
-                <input type="text" placeholder="Enter your mail" style="background: white; border-radius:5px; outline: none; color: black; font-size: 24px; padding: 5px; margin-bottom: 20px;"> <br>
-                <button style="background:#08b4f8; outline: none; border-radius: 5px; font-size: 20px; border-color: #08b4f8;">Subscribe</button>
+                <input id="subscribe" type="text" placeholder="Enter your mail" style="background: white; border-radius:5px; outline: none; color: black; font-size: 18px; padding: 5px; margin-bottom: 20px;"> <br>
+                <button style="background:#08b4f8; outline: none; border-radius: 5px; font-size: 16px; border-color: #08b4f8;" onclick="clearinput();">Subscribe</button>
             </div>
         </div>
         </footer>
     </div>
                   
-      <script src="index.js"></script>      
+      <script>
+          const clearinput =()=>{
+              document.getElementById('subscribe').value ="";
+          }
+          const change=()=>{
+            window.location.href = 'Register.html';
+          }
+
+          const change2=()=>{
+            window.location.href = 'SignIn.html';
+          }
+      </script>      
 </body>
 </html>

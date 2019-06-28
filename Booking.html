@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+     .navdiv{
+            background-color: #02457a;
+            display: flex;
+            padding: 20px;
+            width: 96vw;
+            height: 50px;
+            align-items: center;
+        }
+        .p1{
+            color: white;
+            font-weight: bold;
+            font-size: 32px;
+            font-family: Verdana;
+        }
+        .p2{
+            color: #08b4f8;
+            font-weight: bold;
+            font-size: 32px;
+            font-family: Verdana, sans-serif;
+        }
+        nav a {
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            margin-right: 20px;
+            font-family: Verdana, sans-serif;
+        }
+        nav {
+            padding-top: 10px;
+            margin-left: 200px;
+        }
+        /* .bodydiv{
+            background-image: url('./images/subway_trans.jpeg');
+            width: 99vw;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        } */
+        .overlay{
+            background-color: black; 
+            opacity: 0.7; 
+            height: 100%; 
+            width:99%; 
+            position: absolute;
+        }
+        .btndiv{
+            display: flex;
+            align-self: center;
+            margin-bottom: 15px;
+        }
+        body{
+            /* display: flex;
+            flex-direction: column; */
+            align-items: center;
+            justify-content: center;
+            background: white;
+        }
+
+        .input-area-back{
+            background-color: rgb(240, 240, 240);
+            width: 99vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: -100px;
+        }
+
+        .main-input-div{
+            background-color: rgb(236, 173, 0);
+            height: 150px;
+            width: 70%;
+            margin-top: 15%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .btndiv button{
+            background-color: rgb(236, 173, 0);
+            color: rgb(9, 20, 173);
+            outline: none;
+            border: none;
+            margin: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .sub-input-div{
+            display: flex;
+        }
+        .sub-input-div input{
+            border: none;
+            background: white;
+            border-radius: 5px;
+            color: black;
+            outline: none;
+            padding: 10px;
+            margin: 5px;
+            font-size: 20px;
+        }
+        .sub-input-div button{
+            font-size: 18px;
+            color: white;
+            border: none;
+            background-color: #02327a;
+            margin-top: 5px;
+            outline: none;
+            height: 50px;
+            border-radius: 5px;
+        }
+
+
+
+        .sub-input-div2{
+            display: none;
+        }
+        .sub-input-div2 input{
+            border: none;
+            background: white;
+            border-radius: 5px;
+            color: black;
+            padding: 10px;
+            margin: 3px;
+            font-size: 20px;
+            outline: none;
+        }
+        .sub-input-div2 button{
+            font-size: 18px;
+            color: white;
+            border: none;
+            background-color: #02327a;
+            margin-top: 5px;
+            outline: none;
+            height: 50px;
+            border-radius: 5px;
+        }
+
+        .title-div{
+            margin-top: 100px;
+            font-size: 50px;
+            font-weight: bold;
+            margin-left: 15px;
+            margin-bottom: -80px;
+            color: black;
+        }
+
+        .image-area{
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 100px;
+        }
+        .image-area-div{
+            background-color: white;
+            border-color: grey;
+            border-width: .5px;
+            margin-top: -5px;
+            width: 400px;
+            height: 120px;
+            margin-right: 70px;
+            margin-left: 50px;
+            text-align: center;
+            align-content: center;
+            padding: 30px;
+            font-size: 20px;
+            box-shadow: 0px 4px 18px -1px #4e4e4e;
+
+        }
+        .image-area-div button {
+            background-color: white;
+            font-size: 16px;
+            border-color: #02327a;
+            border-width: 2px;
+            outline: none;
+            height: 40px;
+            width: 150px;
+            color: #02327a;
+            font-weight: bold;
+        }
+        img {
+            margin: 50px;
+            margin-bottom: 0px;
+            width: 460px; 
+            height: 250px;
+            box-shadow: 0px 0px 10px -1px #4e4e4e;
+
+        }
+        .big-image-div:hover{
+            transform: scale(1.1);
+            transition-duration: 0.5s;
+        }
+        .big-image-div:hover button{
+            color: white;
+            background-color: #02327a;
+        }
+        .box{
+            background-color: white;
+        }
+        .Receipt{
+                height: 80vh;
+                width: 65%;
+                margin-top: 80px;
+                margin-left: 17%;
+                margin-bottom: 150px;
+                padding: 20px;
+                padding-top: 10px;
+                border: 1px solid rgb(190, 189, 189);
+                font-size: 20px;
+                background-color: white;
+                display: none;
+                font-size: 20px;
+                box-shadow: 0px 0px 10px -1px #4e4e4e;
+        }
+        .Receipt button {
+            background: rgb(238, 73, 73);
+            color: whitesmoke;
+            font-weight: medium;
+            height: 40px;
+            width: 120px;
+            font-size: 20px;
+            margin-left: 340px;
+        }
+    
+</style>
+<body>
+    <!-- Navbar -->
+    <div class="navdiv">
+            <p class="p1">city</p><p class="p2">Trans</p>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="">Booking</a>
+                <a href="RoutesandSchedules.html">Routes and Schedules</a>
+                
+            </nav>
+        </div>
+
+       <div class="box">
+            <div class="image-area">
+                    <div class="big-image-div">
+                        <img src="./images/tourism.jpeg" alt="Tour">
+                        <div class="image-area-div">
+                            <p>Embark on fun tours with family and friends from our tourist partners</p>
+                            <button onclick="opentour();">View More</button>
+                        </div>
+                        
+                    </div>
+        
+                    <div class="big-image-div">
+                        <img src="./images/ayalolo.jpeg" alt="">
+                        <div class="image-area-div">
+                            <p>Booking for all vehicle your rental needs; both corporate and individual</p>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+        
+               <div class="input-area-back">
+        
+                    <div>
+                            <p class="title-div">
+                                Reserve slots for all your tours and rentals!
+                            </p>
+                    </div>
+                    <div id="expand" class="main-input-div">
+                            <div class="btndiv">
+                                <button onclick="display();">City Tour</button>
+                                <button onclick="display2();">Rentals</button>
+                            </div>
+                
+                            <div id="change-div" class="sub-input-div">
+                                <input id="tourDestination" type="text" placeholder="Name of destination">
+                                <input id="tourDate" type="date" placeholder="Tues 27/2">
+                                <input id="tourNo_Persons" type="number" placeholder="Number of persons">
+                                <button id="tourSubmit" onclick="tourSubmit();">Submit</button>
+                            </div>
+                
+                            <div id="change-div2" class="sub-input-div2">
+                                <div>
+                                    <input id="car" type="text" placeholder="Vehicle">
+                                    <input id="carQuan" type="number" placeholder="Quantity">
+                                </div>
+                                <div>
+                                    <input id="start" type="datetime" placeholder="Start-Date...">
+                                    <input id="endpoint" type="datetime" placeholder="End-Date...">
+                                    <input id="em" type="email" placeholder="Email Address">
+                                </div>    
+                                <div>
+                                    <input type="text" placeholder="Digital Address">
+                                    <input id="con" type="tel" placeholder="Contact">
+                                </div>
+                                    
+                                    <button id="rentalSubmit" onclick="rentalSubmit();">Submit</button>
+                            </div>
+
+                    </div>
+                </div>
+       </div>
+
+            <!-- Tour Reservation -->
+        <div id="show-tour-receipt" class="Receipt">
+            
+                <p id = 'bookingNote' style="font-weight: bold; font-size: 26px;">Tour Reservation</p>
+                <p>There are special conditions for this tour</p>
+               
+                 <hr>
+                <div style="display: flex;">
+                    <p style="margin-right: 10px;">Destination :</p>
+                    <p style="margin-right: 50px;" id="setdestination"></p>
+
+                    <p style="margin-right: 10px;">Date :</p>
+                    <p id="setdate"></p>
+                </div>
+
+                <hr>
+
+                <div style="display: flex;">
+                        <p style="margin-right: 10px;">Number of persons :</p>
+                        <p id="setnumber"></p>
+                </div>
+
+                <hr>
+
+                <p>Kindly present this upon arrival.</p>
+                <p>Thank You !</p>
+                <button>Print Out</button>
+            
+        </div>  
+        
+        <!-- Rental Reservation -->
+        <div id="showrentalreceipt" class="Receipt">
+            <p style="font-weight: bold; font-size: 26px;">Rental Reservation</p>
+            <div style="display: flex">
+                    <p>Vehicle:</p>
+                    <p id="settype"></p>
+
+                    <p>Quantity:</p>
+                    <p id="setquan"></p>
+                </div>
+                
+                 <div style="display: flex;">
+                        <p style="margin-right: 10px;">Email:</p>
+                        <p id="setemail"></p>
+    
+                        <p style="margin-right: 10px;">Rental Start-Date:</p>
+                        <p id="setstartdate"></p>
+                    </div>
+                    
+                    <div style="display: flex;">
+                        <p style="margin-right: 10px;">Rental End-Date:</p>
+                        <p id="setenddate"></p>
+
+                        <p>Contact:</p>
+                        <p id="setnumber"></p>
+                    </div>
+                    
+                    <p>Kindly present this upon arrival.</p>
+                    <p>Thank You !</p>
+                    <button>Print Out</button>
+        </div>
+       
+        
+    <script>
+        const display=()=>{
+            document.getElementById('change-div').style.display = "flex";
+            
+            document.getElementById('change-div2').style.display = "none";
+
+            document.getElementById('expand').style.width = "70%";
+            document.getElementById('expand').style.height = "150px";
+         }
+
+         const display2 = () => {
+
+            document.getElementById('change-div2').style.display = "flex";
+            document.getElementById('change-div2').style.flexDirection = "column";
+            document.getElementById('change-div2').style.alignItems= "center";
+
+            document.getElementById('expand').style.width = "70%";
+            document.getElementById('expand').style.height = "300px";
+            
+            document.getElementById('change-div').style.display = "none";
+         }
+
+         const tourSubmit = () => {
+
+            var destination = document.getElementById('tourDestination').value;
+            var trDate = document.getElementById('tourDate').value;
+            var persons = document.getElementById('tourNo_Persons').value;
+
+            if(destination != "", trDate != "", persons != ""){
+
+                document.getElementById('setdestination').innerHTML = destination.toUpperCase();
+                document.getElementById('setdate').innerHTML = trDate;
+                document.getElementById('setnumber').innerHTML = persons;
+
+                document.getElementById('show-tour-receipt').style.display = "flex";
+                document.getElementById('show-tour-receipt').style.flexDirection = "column";
+            }
+
+         }
+
+
+         const rentalSubmit = () => {
+            var carType = document.getElementById('car').value;
+            var quan = document.getElementById('carQuan').value;
+            var rentstartdate = document.getElementById('start').value;
+            var rentendDate = document.getElementById('endpoint').value;
+            var emailAdd = document.getElementById('em').value;
+
+            if(carType != "", rentstartdate != "", emailAdd != ""){
+             document.getElementById('settype').innerHTML = carType.toUpperCase();
+             document.getElementById('setquan').innerHTML = quan;
+             document.getElementById('setemail').innerHTML = emailAdd;
+             document.getElementById('setstartdate').innerHTML = rentstartdate;
+             document.getElementById('setenddate').innerHTML = rentendDate;
+
+             document.getElementById('showrentalreceipt').style.display = "flex";
+             document.getElementById('showrentalreceipt').style.flexDirection = "column";
+            }
+        }
+
+        const opentour =() => {
+            window.location.href ="https://continenttours.com/africa-tours/ghana-tours/";
+        }
+    
+            
+    </script>
+</body>
+</html>
